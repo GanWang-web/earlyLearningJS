@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Happy learning</title>
+    <link rel="stylesheet" type="text/css" href="./homePage.css">
+
+</head>
+
+<body>
+    <script>
+        let quizz=sessionStorage.getItem('quizz');
+        let info = quizz.split("&")
+        let one = info[0].split("=")[1]
+        let two = info[1].split("=")[1]
+        let three = info[2].split("=")[1]
+        let four = info[3].split("=")[1]
+        let five = info[4].split("=")[1].replace("+", " ")
+        let node = document.createElement("p")
+        node.innerHTML = `
+        <section class="sec">
+            <ol style="text-align:left">
+                <li>
+                    <p style="color:red" >Question 1</p>
+                    <p in="one">Your answer:${one}</p>
+                    <p>Correct answer---A:apple</p>
+                </li>
+                <li>
+                    <p style="color:red" >Question 2</p>
+                    <p in="two">Your answer:${two}</p>
+                    <p>Correct answer---B:undefined</p>
+                </li>
+                <li>
+                    <p style="color:red" >Question 3</p>
+                    <p in="three">Your answer:${three}</p>
+                    <p>Correct answer---D:both B and C</p>
+                </li>
+                <li>
+                    <p style="color:red" >Question 4</p>
+                    <p in="four">Your answer:${four}</p>
+                    <p>Correct answer---D:undefined and ReferenceError</p>
+                </li>
+                <li>
+                    <p style="color:red" >Question 5</p>
+                    <p in="five">Your answer:${five}</p>
+                    <p>Correct answer---A:Uncaught ReferenceError</p>
+                </li>
+
+            </ol>
+        </section>
+        `
+        document.body.appendChild(node)
+    </script>
+</body>
+
+</html>

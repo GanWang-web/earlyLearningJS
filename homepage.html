@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Happy learning</title>
+    <link rel="stylesheet" type="text/css" href="./homePage.css">
+</head>
+
+<body>
+    <script>
+        document.cookie = "test=correct;path=/" ;
+    </script>
+    <header>
+        <img class="logo" src="./images/logo.jpg">
+        <nav>
+            <a class="nav_li">Features</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a class="nav_li">About</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a class="nav_li">Testimonials</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a class="nav_li">Download</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a class="nav_li">Connect</a>&nbsp;&nbsp;
+        </nav>
+    </header>
+    <section class="sec">
+        <dl>
+            <dt class="title">Happy Learning</dt>
+            <dd class="description_content">
+                <i>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                    placeat facere possimus.Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                    quo minus id quod maxime placeat facere possimus.</i>
+            </dd>
+        </dl>
+        <iframe width="265" src="https://www.youtube.com/embed/NibKfejNSL4" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </section>
+
+    <section class="sec">
+        <dl>
+            <dt class="title">Lessons</dt>
+            <dd>
+                <ul>
+                    <li>
+                        <h3>Lesson 1</h3><i>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                            quo minus id quod maxime placeat facere possimus.Nam libero tempore, cum soluta nobis
+                            est</i>
+                    </li>
+                    <li>
+                        <h3>Lesson 2</h3><i>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                            quo minus id quod maxime placeat facere possimus.Nam libero tempore, cum soluta nobis
+                            est</i>
+                    </li>
+                    <li>
+                        <h3>Lesson 3</h3><i>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                            quo minus id quod maxime placeat facere possimus.Nam libero tempore, cum soluta nobis
+                            est</i>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+    </section>
+
+    <div class="bannerimage">
+
+        <div class="prev"></div>
+        <div class="next"></div>
+
+        <div class='box'>
+            <div class='img-g' style='left:0px;transition:left 1s;'>
+                <img src="./images/11.webp" alt="1">
+                <img src="./images/22.jpg" alt="2">
+                <img src="./images/33.webp" alt="3">
+                <img src="./images/44.jpg" alt="4">
+                <img src="./images/55.jpg" alt="5">
+                <img src="./images/66.jpeg" alt="6">
+                <img src="./images/77.jpg" alt="7">
+            </div>
+        </div>
+    </div>
+
+    <section class="form_container">
+        <header>
+            <h1 class="title">Registration</h1>
+        </header>
+        <form id="registration" action="./registration.html" method="GET" class="form">
+            <fieldset>
+                <label>Name<span class="requiredMark">*</span></label></label>
+                <input id="name" name="name" value="" required placeholder="e.g. John Smith">
+            </fieldset>
+            <fieldset>
+                <label>Email<span class="requiredMark">*</label>
+                <input name="email" required placeholder="e.g. xxx@xxx.com">
+            </fieldset>
+            <fieldset>
+                <label>Gender</label>
+                <select name="gender">
+                    <option selected>Choose...</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="intersex">Intersex</option>
+                    <option value="trans">Trans</option>
+                    <option value="non-confirming">Non-confirming</option>
+                    <option value="eunuch">Eunuch</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label>Date of Birth</label>
+                <input name="DOB" type="date">
+            </fieldset>
+            <fieldset>
+                <label>Education</label>
+                <select name="education">
+                    <option selected>Choose...</option>
+                    <option value="Certificate I">Certificate I</option>
+                    <option value="Certificate II">Certificate II</option>
+                    <option value="Certificate III">Certificate III</option>
+                    <option value="Certificate IV">Certificate IV</option>
+                    <option value="Diploma">Diploma</option>
+                    <option value="Bachelor Degree">Bachelors Degree</option>
+                    <option value="Masters Degree">Masters Degree</option>
+                    <option value="Doctoral Degree">Doctoral Degree</option>
+                </select>
+            </fieldset>
+            <fieldset id="btns" class="btns">
+                <button id="submitBtn" type="submit" class="submit">Submit</button>
+                <button id="resetBtn" type="reset" class="reset">RESET</button>
+            </fieldset>
+        </form>
+    </section>
+    <section class="sec">
+        <form id="testimonial">
+            <h1 class="testimonials_header">Testimonials</h1>
+            <textarea id="testimonialContent" rows="2" cols='35'></textarea>
+            <div>
+                <span>Nickname:</span>
+                <input id="nickname" required></input>
+                <button type="submit" id="testimonialSubmit" class="submit">Post</button>
+                <button type="reset" id="testimonialCancel" class="cancel">Clear</button>
+            </div>
+        </form>
+        <div style="border-style: dotted solid; border:1px solid purple; text-align: left;">
+            <ul id="testimonialUl">
+            </ul>
+        </div>
+
+    </section>
+
+    <section class="sec">
+        <div id="content">
+            <article>
+                <header>
+                    <h2>JS questions!</h2>
+                </header>
+                <!-- start SURVEY -->
+                <div class="survey">
+                    <form id="questionaire" action="./response.html" method="POST">
+                        <fieldset class="form-inner">
+                            <legend>What will print out to the console?</legend>
+                            <label>
+                                <code>
+                                    function person(){
+                                        let name="orange";
+                                        console.log(this.name);
+                                    }
+                                    var egg = {
+                                        name:"apple"
+                                    }
+                                    person.call(egg);
+                                </code>
+                            </label>
+                            <ol>
+                                <li>
+                                    <input type="radio" name="one" value="A:window<" />
+                                    <label>A:window</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="one" value="B:apple" />
+                                    <label>B:apple</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="one" value="C:orange" />
+                                    <label>C:orange</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="one" value="D:undefined">
+                                    <label>D:undefined</label>
+                                </li>
+                            </ol>
+                        </fieldset>
+                        <fieldset class="form-inner">
+                            <legend>What will print out to the console?</legend>
+                            <label>
+                                <code>
+                                    let a="apple";
+                                    function fight(){
+                                        console.log(a);
+                                        var a="angel";
+                                    };
+                                    fight();
+                                </code>
+                            </label>
+                            <ol>
+                                <li>
+                                    <input type="radio" name="two" value="A:apple" />
+                                    <label>A:apple</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="two" value="B:undefined" />
+                                    <label>B:undefined</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="two" value="C:angel" />
+                                    <label>C:angel</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="two" value="D:an error" />
+                                    <label>D:an error</label>
+                                </li>
+                            </ol>
+                        </fieldset>
+                        <fieldset>
+                            <label>
+                                Tick the differences between reference type and
+                                primivates of JS
+                            </label>
+                            <ol>
+                                <li>
+                                    <input type="checkbox" name="three" value="A" />
+                                    <label>
+                                        A:Reference type can only store values and the value cannot be
+                                        modified.
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="three" value="B" />
+                                    <label>
+                                        B:Primitive values are data that are stored on the
+                                        stack, Primitive value is stored directly in the location that the variable
+                                        accesses.
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="three" value="C" />
+                                    <label>
+                                        C:Reference values are objects that are stored in
+                                        the heap.
+                                        Reference value stored in the variable location is a pointer to a location in
+                                        memory where the object is stored.
+                                    </label>
+                                </li>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="three" value="D" />
+                                    <label>D:B and C</label>
+                                </li>
+                            </ol>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="dropdown">
+                                <legend>What will print out to the console?</legend>
+                                <label>
+                                    <code>
+                                        (function sayHi() {
+                                            console.log(name);
+                                            console.log(age);
+                                            var name = "Lydia";
+                                            let age = 21;
+                                        }());
+                                    </code>
+                                </label>
+                                <div class="dropdown-content">
+                                    <ol>
+                                        <li>
+                                            <input type="radio" name="four" value="A:Nothing" />
+                                            <label>A:Nothing</A:Nothing></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="four" value="B:Lydia and ReferenceError" />
+                                            <label>B:Lydia and ReferenceError</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="four" value="C:ReferenceError and 21" />
+                                            <label>C:ReferenceError and 21</label>
+                                        </li>
+                                        <li> <input type="radio" name="four" value="D:undefined and ReferenceError" />
+                                            <label>D:undefined and ReferenceError</label>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>What will print out to the console?</legend>
+                            <label>
+                                <code>
+                                    let name = 'ConardLi'
+                                    {
+                                    console.log(name)
+                                    let name = 'code'
+                                    }
+                                </code>
+                            </label>
+                            <ol>
+                                <li>
+                                    <input type="radio" name="five" value="A:Uncaught ReferenceError" />
+                                    <label>A:Uncaught ReferenceError</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="five" value="B:code" />
+                                    <label>B:code</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="five" value="C:ConardLi" />
+                                    <label>C:ConardLi</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="five" value="D:Undefined">
+                                    <label>D:Undefined</label>
+                                </li>
+                                <input id="submit_btn" type="submit" />
+                                <input type="reset" />
+                            </ol>
+                        </fieldset>
+                    </form>
+                </div>
+                <!-- end SURVEY -->
+            </article>
+        </div>
+    </section>
+    <script src="./homePage.js"></script>
+</body>
+</html>
