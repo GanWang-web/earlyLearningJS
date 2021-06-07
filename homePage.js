@@ -2,13 +2,6 @@ registration.reset()
 questionaire.reset()
 testimonial.reset()
 
-var logo = document.getElementsByClassName("logo")[0].addEventListener("click",function(){
-	for(var i =0;i<3;i++){
-		(function(i){
-			console.log(i);
-		})(4)
-	}
-})
 function delete_post() {
 	let deleted = document.getElementsByClassName("post")
 	for (var i = 0; i < deleted.length; i++) {
