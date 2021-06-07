@@ -1,15 +1,7 @@
 registration.reset()
 questionaire.reset()
 testimonial.reset()
-function Supermarket(){}
-Supermarket.prototype.product = "口罩";
 
-function shop(){}
-// shop.prototype = new Supermarket();
-console.log(Supermarket.prototype);
-var person = new shop()
-console.log(person.product);
-console.log(Object);
 var logo = document.getElementsByClassName("logo")[0].addEventListener("click",function(){
 	for(var i =0;i<3;i++){
 		(function(i){
